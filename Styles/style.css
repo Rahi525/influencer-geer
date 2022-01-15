@@ -79,6 +79,7 @@ body{
 .popular-sec{
     width: 1047px;
     height: 1662px;
+    margin-bottom: 200px;
 }
 main{
     display: flex;
@@ -176,8 +177,8 @@ main{
     Styles of Footer section
 **********************************/ 
 footer{
-    width: 100%;
-    height: 100%;
+    width: 1400px;
+    height: 200px;
     background-color:#0A0826;
     margin-top: 100px;
 }
@@ -202,4 +203,69 @@ footer{
     margin-top: 16px;
     color: white;
     padding: 10px;
+}
+
+/************************************* 
+    Media query for mobile devices
+*************************************/ 
+
+@media only screen and (max-width:688px ) {
+    .banner{
+        flex-direction: column;
+    }
+    .banner-heading{
+        width: 50%;
+    }
+    .banner-text{
+        width: 100%;
+        font-size: 20px;
+        justify-content: center;
+        margin-left: 40px;
+        /* text-align: center; */
+    }
+    .banner-img{
+        margin-top: 400px;
+    }
+    .popular-sec{
+        width: 100%;
+        margin-left: 25px;
+    }
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 16px;
+
+    }
+    footer{
+        width: 360px;
+        height: 211px;
+        background-color:#0A0826;
+    }
+
+}
+@media only screen and (min-width:688px ) and (max-width:992px ) {
+    .banner{
+        flex-direction: column;
+    }
+    .banner-heading{
+        width: 50%;
+    }
+    .banner-text{
+        width: 100%;
+        font-size: 20px;
+        justify-content: center;
+        margin-left: 40px;
+        /* text-align: center; */
+    }
+    .banner-img{
+        margin-top: 400px;
+    }
+    .popular-sec{
+        width: 100%;
+        margin-left: 25px;
+    }
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 16px;
+
+    }
 }
